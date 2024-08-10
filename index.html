@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake , Water and Gun Game | Sadaf Shahab</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="media2.css" />
+    <link rel="stylesheet" href="media3.css" />
+  </head>
+  <body>
+    <!-- heading -->
+    <h1 id="game-name">Snake Water and Gun</h1>
+    <!-- message for start -->
+    <div class="msg-cont">
+      <div class="msg-container">
+        <p id="msg-start">Start Game</p>
+      </div>
+      <!-- message for reset -->
+      <div class="msg-container">
+        <p id="msg-reset">Reset Game</p>
+      </div>
+    </div>
+
+    <!-- images option  -->
+    <div class="select">
+      <div class="options" id="snake">
+        <img src="./images/snake.png" alt="" />
+      </div>
+      <div class="options" id="water">
+        <img src="./images/water.jpeg" alt="" />
+      </div>
+      <div class="options" id="gun">
+        <img src="./images/gun.avif" alt="" />
+      </div>
+    </div>
+    <!-- score board  -->
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p class="player-label user">User Score</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p class="player-label comp">Computer Score</p>
+      </div>
+    </div>
+
+    <!-- win message container  -->
+    <div class="win-container hide">
+      <p class="win-msg"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

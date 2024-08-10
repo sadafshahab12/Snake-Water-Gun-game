@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+}
+h1 {
+  font-size: 5rem;
+  height: 10rem;
+  line-height: 10rem;
+  display: inline-block;
+  margin: 1rem 0;
+  animation: font-size 2s infinite;
+  color: rgb(107, 23, 241);
+}
+
+@keyframes font-size {
+  0% {
+    font-size: 1rem;
+  }
+  100% {
+    font-size: 6rem;
+  }
+}
+/* images  */
+.select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 2rem;
+}
+.options {
+  height: 16rem;
+  width: 16rem;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease-in;
+}
+
+.options:hover {
+  opacity: 0.8;
+
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.options:active {
+  opacity: 0.5;
+  cursor: pointer;
+}
+img {
+  height: 13rem;
+  height: 13rem;
+}
+
+/*score board  */
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 1rem;
+}
+
+.score {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#user-score,
+#comp-score {
+  font-size: 3rem;
+}
+.player-label {
+  color: #fff;
+  background-color: #6b17f1;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* message  */
+#msg-start,
+#msg-reset {
+  background-color: greenyellow;
+  display: inline;
+  font-size: 2rem;
+  font-style: italic;
+  height: 5rem;
+  line-height: 5rem;
+  border: 1px solid;
+  padding: 1rem 3rem;
+  animation: opacity 2s ease-in;
+  border-radius: 10rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#msg-start:hover,
+#msg-reset :hover {
+  opacity: 0.8;
+}
+#msg-start:active,
+#msg-reset:active {
+  opacity: 0.5;
+}
+.msg-cont {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* win message  */
+.win-container {
+  margin-top: 3rem;
+}
+.win-msg {
+  padding: 2rem 4rem;
+  font-size: 3rem;
+  animation: background-color 2s infinite;
+  color: white;
+  font-weight: bold;
+  word-spacing: 1rem;
+  letter-spacing: 0.25rem;
+}
+@keyframes background-color {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: rgb(181, 62, 245);
+  }
+  25% {
+    background-color: rgb(237, 83, 83);
+  }
+  35% {
+    background-color: rgb(113, 6, 113);
+  }
+  45% {
+    background-color: rgb(63, 239, 63);
+  }
+  55% {
+    background-color: green;
+  }
+  65% {
+    background-color: rgb(61, 91, 240);
+  }
+  75% {
+    background-color: rgb(2, 192, 160);
+  }
+  85% {
+    background-color: tomato;
+  }
+  95% {
+    background-color: rosybrown;
+  }
+  100% {
+    background-color: rgb(113, 6, 113);
+  }
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,68 @@
+@media only screen and (max-width: 170px) {
+  h1 {
+    font-size: 0rem;
+    line-height: 5rem;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  @keyframes font-size {
+    0% {
+      font-size: 0rem;
+    }
+    100% {
+      font-size: 1.5rem;
+    }
+  }
+
+  .msg-cont {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  #msg-start,
+  #msg-reset {
+    width: 9rem;
+    font-size: 0.8rem;
+  }
+  #msg-start:active,
+  #msg-reset:active {
+    opacity: 0.5;
+  }
+
+  .options {
+    height: 5rem;
+    width: 5rem;
+  }
+  img {
+    height: 4rem;
+    height: 4rem;
+  }
+  .score-board {
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .score {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .player-label {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+  #user-score,
+  #comp-score {
+    font-size: 1.5rem;
+  }
+  .win-container {
+    margin-top: 1rem;
+  }
+  .win-msg {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}
